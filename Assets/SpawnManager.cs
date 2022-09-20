@@ -4,23 +4,25 @@ using UnityEngine;
 
 public class SpawnManager : SingletonBehaviour<SpawnManager>
 {
-    public GameObject Enemy;
     
-    private int ObjectCount = 0;
-    private void Awake()
-    {
+    public GameObject Prefebs;
     
 
-        for (int i = 0; i < 5000; i++)
+    private void Awake()
+    {
+        for (int i = 0; i < 100; i++)
         {
+           
             float radomX = Random.Range(-100, 100);
             float radomZ = Random.Range(-100, 100);
 
-            Enemy.transform.position = new Vector3(radomX, 1, radomZ);
-            Instantiate(Enemy, Enemy.transform.position, Quaternion.identity);
+            Prefebs.transform.position = new Vector3(radomX, 1, radomZ);
+            Instantiate(Prefebs, Prefebs.transform.position, Quaternion.identity);
           
         }
 
+  
+        
     }
    
 

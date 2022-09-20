@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -249,8 +249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a40a8745040fa349ab226080acaaae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPosition: {fileID: 1332848719}
-  Enemy: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,11 +543,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1767704044141274500, guid: 489082da3d74d3a47b30ef2856d53f4a, type: 3}
   m_PrefabInstance: {fileID: 1767704043225763278}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1332848719 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1767704044141274497, guid: 489082da3d74d3a47b30ef2856d53f4a, type: 3}
-  m_PrefabInstance: {fileID: 1767704043225763278}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2109949514
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140acccf6e699814db3d3c648c26ea5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 1332848714}
+  Prefebs: {fileID: 1332848714}
 --- !u!1001 &1767704043225763278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -648,9 +641,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767704044141274500, guid: 489082da3d74d3a47b30ef2856d53f4a, type: 3}
       propertyPath: m_Name
-      value: Capsule
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1767704044141274501, guid: 489082da3d74d3a47b30ef2856d53f4a, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 576667437}
+    - target: {fileID: 3433456924978497523, guid: 489082da3d74d3a47b30ef2856d53f4a, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 576667437}
